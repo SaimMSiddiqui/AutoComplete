@@ -8,6 +8,8 @@
 #include "trie.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
 
 struct TrieNode *createNode(void);//private method
 
@@ -41,7 +43,11 @@ bool search(struct TrieNode *root, const char *prefix) {
 void insert(struct TrieNode *root, const char *word) {
     struct TrieNode *node = root;
     for (int i = 0; word[i] != '\0'; i++) {
-        int index = word[i] - 'a';
+        char c = tolower(word[i]); // Converts all uppercase to lowercase
+        int index = c - 'a';
+        if (index < 0 || index >= 26){
+            continue;
+        }
         if (node->children[index] == NULL) {
             node->children[index] = createNode();
         }
@@ -52,6 +58,10 @@ void insert(struct TrieNode *root, const char *word) {
 
 struct TrieNode *createNode(void) {
     struct TrieNode *node = (struct TrieNode *) malloc(sizeof(struct TrieNode));
+    if (node == NULL){
+        printf ("ERROR: Memory allocation failed. \n");
+        exit(1);
+    }
     node->isEndOfWord = false;
     for (int i = 0; i < 26; i++) {
         node->children[i] = NULL;
