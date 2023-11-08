@@ -25,16 +25,17 @@ void printWords(struct TrieNode *node, char prefix[]) {
     }
 }
 
-void search(struct TrieNode *root, const char *prefix) {
+bool search(struct TrieNode *root, const char *prefix) {
     struct TrieNode *node = root;
     for (int i = 0; prefix[i] != '\0'; i++) {
         int index = prefix[i] - 'a';
         if (node->children[index] == NULL) {
-            return;
+            return false;
         }
         node = node->children[index];
     }
-    printWords(node, prefix);
+    //printWords(node, prefix);
+    return node-> isEndOfWord;
 }
 
 void insert(struct TrieNode *root, const char *word) {

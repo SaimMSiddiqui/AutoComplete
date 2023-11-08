@@ -17,7 +17,7 @@ struct TrieNode {
 
 struct TrieNode *createNode(void);
 void insert(struct TrieNode *root, const char *word);
-void search(struct TrieNode *root, const char *prefix);
+bool search(struct TrieNode *root, const char *prefix);
 void printWords(struct TrieNode *node, char prefix[]);
 
 #endif /* trie_h */
