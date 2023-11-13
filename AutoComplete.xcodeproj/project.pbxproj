@@ -1,0 +1,150 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXFileReference section */
+		83AC52EE2AFD937100C159F4 /* .DS_Store */ = {isa = PBXFileReference; lastKnownFileType = file; path = .DS_Store; sourceTree = "<group>"; };
+		83AC52EF2AFD937100C159F4 /* test */ = {isa = PBXFileReference; lastKnownFileType = folder; path = test; sourceTree = "<group>"; };
+		83AC52F02AFD937100C159F4 /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		83AC52F12AFD937100C159F4 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		83AC52F22AFD937100C159F4 /* .github */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .github; sourceTree = "<group>"; };
+		83AC52F32AFD937100C159F4 /* .git */ = {isa = PBXFileReference; lastKnownFileType = folder; path = .git; sourceTree = "<group>"; };
+		83AC52F42AFD937100C159F4 /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		83AC52E82AFD937100C159F4 = {
+			isa = PBXGroup;
+			children = (
+				83AC52EE2AFD937100C159F4 /* .DS_Store */,
+				83AC52EF2AFD937100C159F4 /* test */,
+				83AC52F02AFD937100C159F4 /* Makefile */,
+				83AC52F12AFD937100C159F4 /* .gitignore */,
+				83AC52F22AFD937100C159F4 /* .github */,
+				83AC52F32AFD937100C159F4 /* .git */,
+				83AC52F42AFD937100C159F4 /* src */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		83AC52ED2AFD937100C159F4 /* AutoComplete */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 83AC52F52AFD937100C159F4 /* Build configuration list for PBXLegacyTarget "AutoComplete" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/make;
+			buildWorkingDirectory = "/Users/saimsiddiqui/Desktop/Personal Projects/AutoComplete/AutoComplete";
+			dependencies = (
+			);
+			name = AutoComplete;
+			passBuildSettingsInEnvironment = 1;
+			productName = AutoComplete;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		83AC52E92AFD937100C159F4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+			};
+			buildConfigurationList = 83AC52EC2AFD937100C159F4 /* Build configuration list for PBXProject "AutoComplete" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 83AC52E82AFD937100C159F4;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				83AC52ED2AFD937100C159F4 /* AutoComplete */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		83AC52EA2AFD937100C159F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		83AC52EB2AFD937100C159F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		83AC52F62AFD937100C159F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEBUGGING_SYMBOLS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = AutoComplete;
+			};
+			name = Debug;
+		};
+		83AC52F72AFD937100C159F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = AutoComplete;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		83AC52EC2AFD937100C159F4 /* Build configuration list for PBXProject "AutoComplete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83AC52EA2AFD937100C159F4 /* Debug */,
+				83AC52EB2AFD937100C159F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83AC52F52AFD937100C159F4 /* Build configuration list for PBXLegacyTarget "AutoComplete" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83AC52F62AFD937100C159F4 /* Debug */,
+				83AC52F72AFD937100C159F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 83AC52E92AFD937100C159F4 /* Project object */;
+}
