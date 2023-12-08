@@ -41,19 +41,20 @@ bool search(struct TrieNode *root, const char *prefix) {
 }
 
 void insert(struct TrieNode *root, const char *word) {
-    struct TrieNode *node = root;
-    for (int i = 0; word[i] != '\0'; i++) {
+    struct TrieNode *temp = root;
+     for (int i = 0; word[i] != '\0'; i++) {
         char c = tolower(word[i]); // Converts all uppercase to lowercase
         int index = c - 'a';
         if (index < 0 || index >= 26){
             continue;
         }
-        if (node->children[index] == NULL) {
-            node->children[index] = createNode();
+        if (temp->children[index] == NULL) {
+            temp->children[index] = createNode();
+            temp->children[index].letter = c;
         }
-        node = node->children[index];
+        temp = node->children[index];
     }
-    node->isEndOfWord = true;
+//    temp->isEndOfWord = true;
 }
 
 struct TrieNode *createNode(void) {
@@ -66,5 +67,7 @@ struct TrieNode *createNode(void) {
     for (int i = 0; i < 26; i++) {
         node->children[i] = NULL;
     }
+    node->letter = NULL;
+    
     return node;
 }
